@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Tesseract</title>
+    <script>
+        function calcular() {
+            console.log("dsd");
+            var r = actividad3("leepdag");
+            console.log(r);
+
+            var str = ["a", "c", "d", "e", "g", "i", "l", "m", "n", "o", "p", "r", "s", "t", "u", "w"];
+
+            for (var i = 0; i < str.length; i++) {
+                for (var j = 0; j < str.length; j++) {
+                    for (var k = 0; k < str.length; k++) {
+                        for (var m = 0; m < str.length; m++) {
+                            for (var n = 0; n < str.length; n++) {
+                                for (var o = 0; o < str.length; o++) {
+
+                                    for (var p = 0; p < str.length; p++) {
+
+                                        var str_temp = str[i] + str[j] + str[k] + str[m] + str[n] + str[o] + str[p];
+                                        //console.log(str_temp);
+
+                                        var r = actividad3(str_temp);
+
+                                        if(r == 667734139064){
+                                            alert("La cadena es --> " + str_temp);
+                                            alert("El resultado es ---> " + r);
+                                        }
+
+
+                                    }
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+
+            console.log("No existen mas cadenas");
+
+        }
+
+        function actividad3(str) {
+            var h = 7;
+            var letters = ["a", "c", "d", "e", "g", "i", "l", "m", "n", "o", "p", "r", "s", "t", "u", "w"];
+
+            for (var i = 0; i < str.length; i++) {
+                var letter = str[i];
+                var index = letters.indexOf(letter);
+                h = (h * 37) + index;
+            }
+            return h;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="calcular()">Calcular cadena</button>
+</body>
+</html>

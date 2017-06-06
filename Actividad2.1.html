@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solución 2.1</title>
+	  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+      <link rel="stylesheet" type="text/css" href="Styles/Estilos.css">
+</head>
+<body>
+<header>
+</header>
+  <H1>Prueba 2.1</a></H1>
+   <script>
+
+    function restar(Numero1, Numero2, Numero3, Numero4, Numero5) {
+    
+  var Numero;
+ 	 Numero1 = prompt("Ingresa el primer numero");
+ 	 var Numero2;
+ 	 Numero2 =prompt("Ingresa el segundo numero");
+ 	 var Numero3;
+ 	 Numero3 = prompt("Ingresa el tercer numero");
+ 	 
+ 	 var Resultado1 = (Numero1-Numero2);
+ 	 var Resultado2 = (Numero1-Numero3);
+ 	 var Resultado3 = (Numero2-Numero1);
+ 	 var Resultado4 = (Numero2-Numero3);
+ 	 var Resultado5 = (Numero3-Numero1);
+ 	 var Resultado6 = (Numero3-Numero2);
+
+ 	
+
+document.write("Resultado de " + Numero1+ - +Numero2+ "es de :");
+ 	 document.write(Resultado1 + "  |  ");
+ 	 document.write("Resultado " +Numero1+ - +Numero3+ "es de :");
+ 	 document.write(Resultado2 + "  |  ");
+ 	 document.write("Resultado " +Numero2+ - +Numero1+ "es de :");
+ 	 document.write(Resultado3 + "  |  ");
+ 	 document.write("Resultado " +Numero2+ - +Numero3+ "es de :");
+ 	 document.write(Resultado4 + "  |  ");
+ 	 document.write("Resultado " +Numero3+ - +Numero1+ "es de :");
+ 	 document.write(Resultado5 + "  |  ");
+ 	 document.write("Resultado " +Numero3+ - +Numero2+ "es de :");
+ 	 document.write(Resultado6 + "  |  ");
+
+
+
+ 	
+
+ 	if (Resultado1>Resultado2&&Resultado3&&Resultado4&&Resultado5&&Resultado6) {
+       alert("El sustraendo mayor es de" + " "+ Resultado1 );
+
+ 	}
+
+ 		else if (Resultado2>Resultado1&&Resultado3&&Resultado4&&Resultado5&&Resultado6)  {
+       alert("El sustraendo mayor es de" +Resultado2 );
+
+ 	}
+
+ 		else if(Resultado3>Resultado5&&Resultado4&&Resultado1&&Resultado2) {
+       alert("El sustraendo mayor es de" +Resultado3 );
+
+ 	}
+
+ 		else if(Resultado4>Resultado6&&Resultado5&&Resultado1&&Resultado3&&Resultado2) {
+       alert("El sustraendo mayor es de" +Resultado4 );
+
+ 	}
+
+ 		else if(Resultado5>Resultado6&&Resultado1&&Resultado4&&Resultado3&&Resultado2) {
+       alert("El sustraendo mayor es de" +Resultado5 );
+
+ 	}
+
+ 		else (Resultado6>Resultado5&&Resultado4&&Resultado3&&Resultado2&&Resultado1) 
+       alert("El sustraendo mayor es de" +Resultado6 );
+
+   
+}
+
+
+
+ </script>
+
+<button onclick="restar()">Comenzar</button>
+
+</body>
+</html>
